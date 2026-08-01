@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#153c33">
+  <meta name="description" content="Invitación de boda de Luis Felipe Cano y Ana María Cárdenas">
+  <title>Luis Felipe y Ana María | Pasaporte de boda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <main class="site-shell">
+    <section class="passport" aria-label="Invitación de boda interactiva">
+      <header class="passport-topbar">
+        <div>
+          <p class="eyebrow">Pasaporte para nuestra boda</p>
+          <p class="couple-mini">Luis Felipe y Ana María</p>
+        </div>
+        <div class="stamp-small">05 SEP<br>2026</div>
+      </header>
+
+      <div class="book" id="book">
+        <article class="page active cover-page" data-page="0">
+          <div class="cover-emblem" aria-hidden="true">✦</div>
+          <p class="cover-kicker">Pasaporte</p>
+          <h1>Luis Felipe Cano<br><span>y</span><br>Ana María Cárdenas</h1>
+          <p class="cover-subtitle">Destino confirmado: Pensilvania, Estados Unidos</p>
+          <div class="cover-date">5 de septiembre de 2026</div>
+          <button class="primary start-btn" type="button">Abrir pasaporte</button>
+        </article>
+
+        <article class="page" data-page="1">
+          <div class="page-number">01</div>
+          <p class="eyebrow">Bienvenidos a bordo</p>
+          <h2>Nuestro viaje más importante comienza aquí.</h2>
+          <p class="lead">
+            Junto con nuestras familias, los invitamos a celebrar nuestra boda
+            y el inicio de una nueva aventura.
+          </p>
+
+          <div class="countdown" aria-label="Cuenta regresiva">
+            <div><strong id="days">0</strong><span>Días</span></div>
+            <div><strong id="hours">0</strong><span>Horas</span></div>
+            <div><strong id="minutes">0</strong><span>Minutos</span></div>
+            <div><strong id="seconds">0</strong><span>Segundos</span></div>
+          </div>
+
+          <div class="visa-stamp">ADMITIDOS<br>AMOR 2026</div>
+        </article>
+
+        <article class="page" data-page="2">
+          <div class="page-number">02</div>
+          <p class="eyebrow">Pase de abordar</p>
+          <h2>Destino: Nuestra boda</h2>
+
+          <div class="boarding-pass">
+            <div class="ticket-main">
+              <div>
+                <span>Pasajeros</span>
+                <strong>Luis Felipe Cano<br>Ana María Cárdenas</strong>
+              </div>
+              <div class="ticket-grid">
+                <div><span>Vuelo</span><strong>AMOR 0905</strong></div>
+                <div><span>Fecha</span><strong>05 SEP 2026</strong></div>
+                <div><span>Destino</span><strong>PENSILVANIA, EE. UU.</strong></div>
+                <div><span>Hora</span><strong id="boardingTime">CLASIFICADO</strong></div>
+                <div><span>Clase</span><strong>PRIMERA</strong></div>
+                <div><span>Asiento</span><strong>JUNTOS</strong></div>
+              </div>
+            </div>
+            <div class="ticket-stub">
+              <span>Confirmación</span>
+              <strong>LFC-AMC</strong>
+              <div class="barcode" aria-hidden="true"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page" data-page="3">
+          <div class="page-number">03</div>
+          <p class="eyebrow">Nuestra historia</p>
+          <h2>Dos caminos, un mismo destino.</h2>
+          <p class="lead">
+            Aquí podrán contar brevemente cómo se conocieron, cuál fue su primera
+            aventura juntos y cómo llegaron hasta este día.
+          </p>
+
+          <div class="story-route" aria-label="Línea de tiempo de la pareja">
+            <div class="story-stop">
+              <span class="dot"></span>
+              <div><strong>El comienzo</strong><p>Agreguen aquí el año y una frase corta.</p></div>
+            </div>
+            <div class="story-stop">
+              <span class="dot"></span>
+              <div><strong>La propuesta</strong><p>Agreguen aquí el lugar y el momento especial.</p></div>
+            </div>
+            <div class="story-stop">
+              <span class="dot"></span>
+              <div><strong>La boda</strong><p>5 de septiembre de 2026.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page" data-page="4">
+          <div class="page-number">04</div>
+          <p class="eyebrow">Información clasificada</p>
+          <h2>La dirección exacta y la hora serán reveladas muy pronto.</h2>
+
+          <div id="classifiedPanel" class="classified-panel">
+            <div class="lock-mark">✦</div>
+            <p class="classified-label">ARCHIVO RESERVADO</p>
+            <p id="revealMessage" class="lead">La celebración será en Pensilvania, Estados Unidos. La dirección exacta y la hora se revelarán en pocos días.</p>
+
+            <div class="countdown reveal-countdown" aria-label="Cuenta regresiva para revelar lugar y hora">
+              <div><strong id="revealDays">0</strong><span>Días</span></div>
+              <div><strong id="revealHours">0</strong><span>Horas</span></div>
+              <div><strong id="revealMinutes">0</strong><span>Minutos</span></div>
+              <div><strong id="revealSeconds">0</strong><span>Segundos</span></div>
+            </div>
+
+            <div id="revealedDetails" class="revealed-details" hidden>
+              <div>
+                <span>Lugar</span>
+                <strong id="finalPlace">Lugar por agregar</strong>
+              </div>
+              <div>
+                <span>Hora</span>
+                <strong id="finalTime">Hora por agregar</strong>
+              </div>
+              <a id="mapButton" class="primary" href="#" target="_blank" rel="noopener noreferrer">Abrir mapa</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="page" data-page="5">
+          <div class="page-number">05</div>
+          <p class="eyebrow">Detalles de la celebración</p>
+          <h2>Prepárate para acompañarnos.</h2>
+
+          <div class="info-grid info-grid-two">
+            <section>
+              <span class="icon">⌖</span>
+              <h3>Lugar</h3>
+              <p id="placeCardText"><strong>Pensilvania, Estados Unidos.</strong><br>La dirección exacta será revelada en pocos días.</p>
+              <a id="placeCardButton" class="secondary disabled-link" href="#" aria-disabled="true">Abrir mapa</a>
+            </section>
+            <section>
+              <span class="icon">◇</span>
+              <h3>Vestimenta</h3>
+              <p><strong>Casual.</strong><br>Queremos que se sientan cómodos y disfruten con nosotros de este día tan especial.</p>
+            </section>
+          </div>
+        </article>
+
+        <article class="page" data-page="6">
+          <div class="page-number">06</div>
+          <p class="eyebrow">Confirmación de asistencia</p>
+          <h2>¿Nos acompañarás en este viaje?</h2>
+
+          <form id="rsvpForm" class="rsvp-form">
+            <label>
+              Nombre completo
+              <input id="guestName" name="guestName" type="text" required placeholder="Nombre del invitado">
+            </label>
+
+            <label>
+              Respuesta
+              <select id="attendance" name="attendance">
+                <option value="Sí, asistiré con alegría">Sí, asistiré con alegría</option>
+                <option value="No podré asistir">No podré asistir</option>
+              </select>
+            </label>
+
+            <label>
+              Número de asistentes
+              <input id="guestCount" name="guestCount" type="number" min="1" max="10" value="1">
+            </label>
+
+            <label>
+              Restricciones alimentarias
+              <input id="dietary" name="dietary" type="text" placeholder="Opcional">
+            </label>
+
+            <label class="full">
+              Canción que no puede faltar
+              <input id="song" name="song" type="text" placeholder="Opcional">
+            </label>
+
+            <button class="primary full" type="submit">Confirmar embarque</button>
+          </form>
+
+          <div id="rsvpResult" class="result" aria-live="polite"></div>
+          <p class="form-note">
+            La confirmación se enviará directamente por WhatsApp al número de la pareja.
+          </p>
+        </article>
+
+        <article class="page" data-page="7">
+          <div class="page-number">07</div>
+          <p class="eyebrow">Última página</p>
+          <h2>Gracias por ser parte de nuestra historia.</h2>
+          <p class="lead">
+            Su presencia hará que este destino sea todavía más especial.
+          </p>
+          <div class="final-seal">
+            <span>Con amor</span>
+            <strong>Luis Felipe y Ana María</strong>
+            <small>5 · 09 · 2026</small>
+          </div>
+          <button class="secondary restart-btn" type="button">Volver a la portada</button>
+        </article>
+      </div>
+
+      <nav class="page-controls" aria-label="Navegación entre páginas">
+        <button id="prevBtn" class="secondary" type="button">← Anterior</button>
+        <div id="pageDots" class="page-dots" aria-label="Indicador de página"></div>
+        <button id="nextBtn" class="primary" type="button">Siguiente →</button>
+      </nav>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
