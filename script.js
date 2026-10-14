@@ -45,14 +45,14 @@ restartBtn.addEventListener("click", () => showPage(0));
 createDots();
 showPage(0);
 
-const weddingDate = new Date("2026-09-05T16:00:00-04:00");
+const weddingDate = new Date("2026-11-21T15:00:00-04:00");
 
 // Fecha de revelación configurada para el 8 de agosto de 2026 al mediodía.
 // Cambie estos tres valores cuando tenga el lugar y la hora definitivos.
 const revealDate = new Date("2026-08-08T12:00:00-04:00");
-const LUGAR_BODA = "Dirección exacta por agregar, Pensilvania, Estados Unidos";
-const HORA_BODA = "Hora por agregar";
-const URL_MAPA = "#";
+const LUGAR_BODA = "730 Centre Ave, Reading, PA 19601";
+const HORA_BODA = "3:00 PM";
+const URL_MAPA = "https://maps.app.goo.gl/EWeJ5yyxjPReEs98A";
 
 function updateCountdown() {
   const difference = weddingDate.getTime() - Date.now();
@@ -91,7 +91,7 @@ document.getElementById("rsvpForm").addEventListener("submit", (event) => {
     `Canción sugerida: ${song}`,
     "",
     "Boda de Luis Felipe Cano y Ana María Cárdenas",
-    "5 de septiembre de 2026"
+    "21 de noviembre de 2026"
   ].join("\n");
 
   const result = document.getElementById("rsvpResult");
