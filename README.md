@@ -25,7 +25,7 @@ Use el número que recibirá las confirmaciones, en formato internacional sin `+
 En `script.js`, cambie:
 
 ```js
-const weddingDate = new Date("2026-09-05T16:00:00-04:00");
+const weddingDate = new Date("2026-11-21T15:00:00-04:00");
 ```
 
 La hora actual es solo un marcador de posición.
@@ -60,10 +60,9 @@ La página ahora mantiene ocultos el lugar y la hora hasta:
 Para cambiar la fecha, el lugar, la hora y el enlace del mapa, abra `script.js` y edite:
 
 ```js
-const revealDate = new Date("2026-08-08T12:00:00-04:00");
-const LUGAR_BODA = "Lugar por agregar";
-const HORA_BODA = "Hora por agregar";
-const URL_MAPA = "#";
+const LUGAR_BODA = "The Inn at Centre Park";
+const HORA_BODA = "15:00";
+const URL_MAPA = "https://maps.app.goo.gl/EWeJ5yyxjPReEs98A";
 ```
 
 El RSVP está configurado para enviar las respuestas al número:
